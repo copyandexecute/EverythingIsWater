@@ -4,7 +4,8 @@
   "package": "de.noriskclient.watermod.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "ExampleMixin"
+    "ExampleMixin",
+    "SurfaceChunkGeneratorMixin"
   ],
   "client": [
   ],
