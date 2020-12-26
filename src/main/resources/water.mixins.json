@@ -6,7 +6,8 @@
   "mixins": [
     "DiskFeatureMixin",
     "ExampleMixin",
-    "SurfaceChunkGeneratorMixin"
+    "SurfaceChunkGeneratorMixin",
+    "TreeFeatureMixin"
   ],
   "client": [
   ],
