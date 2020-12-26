@@ -4,10 +4,11 @@
   "package": "de.noriskclient.watermod.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "CarverMixin",
     "DiskFeatureMixin",
     "ExampleMixin",
-    "StructurePoolGeneratorMixin",
     "StructurePoolBasedGeneratorMixin",
+    "StructurePoolGeneratorMixin",
     "SurfaceChunkGeneratorMixin",
     "TreeFeatureMixin"
   ],
