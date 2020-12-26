@@ -31,7 +31,8 @@ public abstract class TreeFeatureMixin extends Feature<TreeFeatureConfig> {
     return false;
   }
 
-  @Shadow protected abstract int method_29963(TestableWorld testableWorld, int i, BlockPos blockPos, TreeFeatureConfig treeFeatureConfig);
+  @Shadow
+  protected abstract int method_29963(TestableWorld testableWorld, int i, BlockPos blockPos, TreeFeatureConfig treeFeatureConfig);
 
   public TreeFeatureMixin(Codec<TreeFeatureConfig> configCodec) {
     super(configCodec);
