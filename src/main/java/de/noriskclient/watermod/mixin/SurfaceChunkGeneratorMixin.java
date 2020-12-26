@@ -1,6 +1,7 @@
 package de.noriskclient.watermod.mixin;
 
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraft.world.biome.source.BiomeSource;
 import net.minecraft.world.gen.chunk.ChunkGenerator;
 import net.minecraft.world.gen.chunk.StructuresConfig;
@@ -41,7 +42,7 @@ public abstract class SurfaceChunkGeneratorMixin extends ChunkGenerator {
     if (density > 0.0D) {
       blockState3 = this.defaultBlock;
     } else if (y < this.getSeaLevel() + 100) {
-      blockState3 = this.defaultFluid;
+      blockState3 = Blocks.WATER.getDefaultState();
     } else {
       blockState3 = AIR;
     }
