@@ -13,7 +13,6 @@
     "StructureMixin",
     "StructurePieceMixin",
     "StructurePoolBasedGeneratorMixin",
-    "StructurePoolGeneratorMixin",
     "SurfaceChunkGeneratorMixin",
     "TreeFeatureMixin"
   ],

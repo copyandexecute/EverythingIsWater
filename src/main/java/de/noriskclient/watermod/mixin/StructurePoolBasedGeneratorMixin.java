@@ -15,9 +15,4 @@ public class StructurePoolBasedGeneratorMixin {
     private static int injected(ChunkGenerator chunkGenerator, int x, int z, Heightmap.Type heightmapType) {
         return chunkGenerator.getHeightOnGround(x, z, Heightmap.Type.OCEAN_FLOOR);
     }
-
-   /* @ModifyVariable(method = "addPieces", at = @At("HEAD"), ordinal = 0)
-    private static boolean modifyBool(boolean bl1) {
-        return false;
-    } */
 }
