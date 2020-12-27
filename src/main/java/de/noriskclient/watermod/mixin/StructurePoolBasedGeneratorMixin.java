@@ -42,9 +42,4 @@ public class StructurePoolBasedGeneratorMixin {
         PoolStructurePiece poolStructurePiece = pieceFactory.create(structureManager, structurePoolElement, blockPos, structurePoolElement.getGroundLevelDelta(), blockRotation, structurePoolElement.getBoundingBox(structureManager, blockPos, blockRotation));
         System.out.println(size);
     }
-
-   /* @ModifyVariable(method = "addPieces", at = @At("HEAD"), ordinal = 0)
-    private static boolean modifyBool(boolean bl1) {
-        return false;
-    } */
 }

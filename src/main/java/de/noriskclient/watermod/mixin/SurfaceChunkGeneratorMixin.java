@@ -41,10 +41,10 @@ public abstract class SurfaceChunkGeneratorMixin extends ChunkGenerator {
     BlockState blockState3;
     if (density > 0.0D) {
       blockState3 = this.defaultBlock;
-    } else if (y < this.getSeaLevel() + 100) {
+    } else if (y < 254) {
       blockState3 = Blocks.WATER.getDefaultState();
     } else {
-      blockState3 = AIR;
+      blockState3 = Blocks.AIR.getDefaultState();
     }
 
     return blockState3;
