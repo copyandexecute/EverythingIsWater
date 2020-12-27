@@ -13,7 +13,7 @@ public class StructurePoolBasedGeneratorMixin {
 
     @Redirect(method = "addPieces", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/gen/chunk/ChunkGenerator;getHeightOnGround(IILnet/minecraft/world/Heightmap$Type;)I"))
     private static int injected(ChunkGenerator chunkGenerator, int x, int z, Heightmap.Type heightmapType) {
-        return chunkGenerator.getHeightOnGround(x, z, Heightmap.Type.OCEAN_FLOOR_WG);
+        return chunkGenerator.getHeightOnGround(x, z, Heightmap.Type.OCEAN_FLOOR);
     }
 
    /* @ModifyVariable(method = "addPieces", at = @At("HEAD"), ordinal = 0)
