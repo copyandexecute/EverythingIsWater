@@ -22,8 +22,6 @@ import java.util.Set;
 @Mixin(Carver.class)
 public class CarverMixin {
 
-  @Shadow @Final protected static BlockState CAVE_AIR;
-
   @Redirect(method = "carveAtPoint", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/chunk/Chunk;setBlockState(Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/BlockState;Z)Lnet/minecraft/block/BlockState;"))
   private BlockState injected(Chunk chunk, BlockPos pos, BlockState state, boolean moved) {
     return chunk.setBlockState(pos, state.isOf(Blocks.CAVE_AIR) ? Blocks.WATER.getDefaultState() : state, moved);
