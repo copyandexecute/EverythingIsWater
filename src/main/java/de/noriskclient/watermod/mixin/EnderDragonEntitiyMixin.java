@@ -10,6 +10,6 @@ public class EnderDragonEntitiyMixin {
 
     @ModifyArg(method = "getNearestPathNodeIndex()I", at = @At(value = "INVOKE", target = "Ljava/lang/Math;max(II)I"), index = 1)
     private int injected(int x) {
-        return x;
+        return 100;
     }
 }
