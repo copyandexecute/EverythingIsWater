@@ -52,9 +52,9 @@ public abstract class TreeFeatureMixin extends Feature<TreeFeatureConfig> {
     if (!config.skipFluidCheck) {
       int m = world.getTopPosition(Heightmap.Type.OCEAN_FLOOR, pos).getY();
       r = world.getTopPosition(Heightmap.Type.WORLD_SURFACE, pos).getY();
-//      if (r - m > config.maxWaterDepth) {
-//        return false;
-//      }
+      if (m < 62) {
+        return false;
+      }
 
       int q;
       if (config.heightmap == Heightmap.Type.OCEAN_FLOOR) {
